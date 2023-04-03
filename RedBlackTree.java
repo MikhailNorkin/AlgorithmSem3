@@ -7,9 +7,11 @@ public class RedBlackTree {
     public void traverse (Node root){ 
         System.out.println(root.value + " " + root.color);
         if (root.leftChild != null){
+            System.out.print("левый ребенок: ");
             traverse(root.leftChild);
         }
         if (root.rightChild != null){
+            System.out.print("правый ребенок: ");
             traverse(root.rightChild);
         }
     }
