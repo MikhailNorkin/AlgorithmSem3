@@ -5,10 +5,10 @@ public class RedBlackTree {
     private Node root;
 
     public void traverse (Node root){ 
+        System.out.println(root.value + " " + root.color);
         if (root.leftChild != null){
             traverse(root.leftChild);
         }
-        System.out.println(root.value + " " + root.color);
         if (root.rightChild != null){
             traverse(root.rightChild);
         }
